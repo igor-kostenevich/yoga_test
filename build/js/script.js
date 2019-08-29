@@ -1,0 +1,1 @@
+$(".menu-mobile").click(function(){$("nav ul").slideToggle("500")}),$(window).resize(function(){768<$(window).width()&&$("nav ul").removeAttr("style")});

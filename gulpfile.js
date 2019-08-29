@@ -6,17 +6,15 @@ const uglify = require('gulp-uglify');
 const del = require('del');
 const browsersSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
-const sass = require('gulp-sass');
 const less = require('gulp-less');
 const imagemin = require('gulp-imagemin');
 
 const styleFiles = [
-        './src/css/media.css',
-        './src/css/main.less'
+        './src/css/main.less',
+        './src/css/media.less'
  ]
 
 const scriptsFiles = [
-    './src/js/lib.js',
     './src/js/main.js'
 ]
 
@@ -29,7 +27,7 @@ gulp.task('styles', () => {
     .pipe(concat('style.css'))
     //Автопрефиксы для посл 2 версий браузеров
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
+        overrideBrowserslist: ['last 2 versions'],
         cascade: false
     }))
     //Минификация
@@ -76,9 +74,6 @@ gulp.task('watch', () => {
     });
     gulp.watch('./src/img/**', gulp.series('img-compress'))
     //Отслеживание
-    // gulp.watch('./src/css/**/*.css', styles)
-    // gulp.watch('./src/css/**/*.scss', styles)
-    // gulp.watch('./src/css/**/*.sass', styles)
     gulp.watch('./src/css/**/*.less', gulp.series('styles'))
     gulp.watch('./src/js/**/*.js', gulp.series('scripts'))
     gulp.watch("./*.html").on('change', browsersSync.reload);
