@@ -234,3 +234,78 @@ body {
   margin-bottom: 0;
   font-family: 'FreestyleScript';
 }
+.blog .blog-title {
+  text-align: center;
+  padding: 125px 0 76px;
+}
+.blog .blog-title h2 {
+  margin-bottom: 25px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-size: 1.875em;
+  color: #5b6ceb;
+  font-family: "Open Sans Bold";
+}
+.blog .blog-title p {
+  color: #777777;
+  font-family: 'FreestyleScript';
+  font-size: 2.56em;
+  font-weight: 400;
+  line-height: 61.49px;
+  margin-bottom: 0;
+}
+.blog .blog-program {
+  padding-bottom: 12.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog .article {
+  width: 48.7%;
+  display: inherit;
+  flex-direction: inherit;
+  margin-bottom: 2.5rem;
+  box-shadow: 0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.blog .article:nth-last-of-type(-n+2) {
+  margin-bottom: 0;
+}
+.blog .article .blog-program--img {
+  width: 270px;
+  height: 300px;
+  border-radius: 5px 0 0 5px;
+}
+.blog .article .blog-program--text {
+  padding: 5rem 3rem 0 3rem;
+  width: 300px;
+  border-radius: 0 5px 5px 0;
+}
+.blog .article .blog-program--text h3 {
+  color: #777;
+  margin-bottom: 3.6rem;
+  font-family: "Open Sans Bold";
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.blog .article .blog-program--text h3 a {
+  color: inherit;
+}
+.blog .article .blog-program--text p {
+  margin-bottom: 2rem;
+  color: #555555;
+  font-family: "Open Sans Regular";
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 22px;
+}
+.blog .article .blog-program--text span {
+  color: #999999;
+  font-family: "Open Sans Regular";
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 22px;
+}

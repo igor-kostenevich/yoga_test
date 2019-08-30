@@ -2,7 +2,7 @@
 @import "fonts.less";
 
 .bg-img(@r, @g, @b, @opacity, @src) {
-    background: 
+    background:
         linear-gradient(rgba(@r, @g, @b, @opacity)),
         url(@src) center center no-repeat;
     background-size: cover;
@@ -24,13 +24,13 @@ body {
 }
 
 .has-error {
-    
+
     input {
         background-color: #e72c2c71 !important;
     }
 }
 
-.has-success{
+.has-success {
     input {
         background-color: #4bb54354 !important;
     }
@@ -109,7 +109,7 @@ body {
 
 
 .slider {
-    .bg-img(83, 99, 219, 0.8,  '../../build/img/bg-slider.png');
+    .bg-img(83, 99, 219, 0.8, '../../build/img/bg-slider.png');
     display: flex;
     padding-top: 8rem;
 
@@ -150,6 +150,7 @@ body {
                     position: relative;
                     display: flex;
                     justify-content: flex-end;
+
                     input,
                     select {
                         border: 1px solid transparent;
@@ -160,14 +161,17 @@ body {
                         padding-left: 10px;
                         border-radius: 6px;
                     }
+
                     select {
                         border: 0;
                         -webkit-appearance: none;
+
                         option {
                             background: @bg-input;
 
                         }
                     }
+
                     ::-webkit-input-placeholder,
                     ::-moz-placeholder,
                     :-ms-input-placeholder {
@@ -215,6 +219,7 @@ body {
             display: flex;
             margin-left: 9.1rem;
             flex-direction: column;
+
             h1 {
                 font-size: 3em;
                 font-weight: 700;
@@ -231,6 +236,95 @@ body {
                 line-height: 45px;
                 margin-bottom: 0;
                 font-family: 'FreestyleScript';
+            }
+        }
+    }
+}
+
+.blog {
+    .blog-title {
+        text-align: center;
+        padding: 125px 0 76px;
+
+        h2 {
+            margin-bottom: 25px;
+            line-height: 45px;
+            text-transform: uppercase;
+            font-size: 1.875em;
+            color: @primary-color;
+            font-family: "Open Sans Bold";
+        }
+
+        p {
+            color: @title-color;
+            font-family: 'FreestyleScript';
+            font-size: 2.56em;
+            font-weight: 400;
+            line-height: 61.49px;
+            margin-bottom: 0;
+        }
+    }
+
+    .blog-program {
+        padding-bottom: 12.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .article {
+        width: 48.7%;
+        display: inherit;
+        flex-direction: inherit;
+        margin-bottom: 2.5rem;
+        box-shadow: .4rem .4rem 2rem rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        &:nth-last-of-type(-n+2) {
+            margin-bottom: 0;
+        }
+
+        .blog-program--img {
+            width: 270px;
+            height: 300px;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .blog-program--text {
+            padding: 5rem 3rem 0 3rem;
+            width: 300px;
+            border-radius: 0 5px 5px 0;
+
+            h3 {
+                color: #777;
+                margin-bottom: 3.6rem;
+                font-family: "Open Sans Bold";
+                font-size: 1.25em;
+                font-weight: 700;
+                line-height: 45px;
+                text-transform: uppercase;
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            p {
+                margin-bottom: 2rem;
+                color: @primary-color-text;
+                font-family: "Open Sans Regular";
+                font-size:  0.875em;
+                font-weight: 400;
+                line-height: 22px;
+            }
+
+            span {
+                color: @color-program;
+                font-family: "Open Sans Regular";
+                font-size: 0.875em;
+                font-weight: 400;
+                line-height: 22px;
             }
         }
     }
