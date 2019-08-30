@@ -1,16 +1,30 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .blog {
         .article {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             img {
                 border-radius: 5px;
             }
+
             .blog-program--text {
                 box-shadow: none;
                 padding: 3rem 0 2rem 3rem;
             }
+        }
+    }
+
+    .about-us {
+        .about-us-wrapp {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-us--text {
+            text-align: center;
+            margin: -4rem 0 3rem;
         }
     }
 }
@@ -41,6 +55,7 @@
             }
         }
     }
+
     .gallery {
         li {
             margin: 0 2rem 1rem;
@@ -64,6 +79,7 @@
         .slider-wrapp {
             flex-direction: column-reverse;
             padding: 4rem 0;
+
             .slider-text {
                 padding-bottom: 4rem;
 
@@ -117,31 +133,52 @@
                     padding: 5rem 1rem 0;
                 }
             }
+
             .blog-title {
                 padding: 3rem 0;
             }
+
             .blog-program {
                 padding-bottom: 3rem;
-                
+
             }
-           
+
+        }
+
+        .about-us {
+            padding: 3rem 0;
+        }
+
+    }
+
+    .about-us {
+        .carousel-about-us {
+            .slick-prev {
+                left: 4px;
+            }
+            .slick-next {
+                right: 32px;
+            }
         }
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
     .blog {
         .blog-program {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             .article {
                 margin-bottom: 2rem;
+
                 .blog-program--text {
                     padding: 2rem .5rem 3.5rem 1.5rem;
-                    
+
                 }
             }
+
             .article:last-child {
                 margin: 0;
             }
@@ -161,10 +198,12 @@
 
             .slider-text {
                 margin-left: 0;
+
                 h1 {
                     font-size: 1.8em;
                     line-height: 56px;
                 }
+
                 p {
                     font-size: 1.7em;
                 }
@@ -174,11 +213,10 @@
 }
 
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 520px) {
     .blog {
         .article {
             min-width: 84.5%;
         }
     }
 }
-

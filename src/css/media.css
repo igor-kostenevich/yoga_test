@@ -11,6 +11,15 @@
     box-shadow: none;
     padding: 3rem 0 2rem 3rem;
   }
+  .about-us .about-us-wrapp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us .about-us--text {
+    text-align: center;
+    margin: -4rem 0 3rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .header .nav ul li {
@@ -79,6 +88,15 @@
   }
   body .blog .blog-program {
     padding-bottom: 3rem;
+  }
+  body .about-us {
+    padding: 3rem 0;
+  }
+  .about-us .carousel-about-us .slick-prev {
+    left: 4px;
+  }
+  .about-us .carousel-about-us .slick-next {
+    right: 32px;
   }
 }
 @media screen and (max-width: 650px) {
