@@ -27,6 +27,35 @@
             margin: -4rem 0 3rem;
         }
     }
+
+    .elements {
+        padding-bottom: 5rem;
+        .elements-wrapp {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                li {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .elements {
+        .elements-wrapp {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    width: 20%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -149,6 +178,18 @@
             padding: 3rem 0;
         }
 
+        .elements {
+            .elements-wrapp {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    li {
+                        width: 40%;
+                    }
+                }
+            }
+        }
     }
 
     .about-us {
@@ -217,6 +258,21 @@
     .blog {
         .article {
             min-width: 84.5%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .elements {
+        .elements-wrapp {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    width: 80% !important;
+                }
+            }
         }
     }
 }

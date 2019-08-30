@@ -8,6 +8,10 @@
     background-size: cover;
 }
 
+.bg-img-icon(@src) {
+    background: url(@src) center center no-repeat;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -52,7 +56,7 @@ body {
     position: fixed;
     top: 0;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.15);
-    z-index: 10;
+    z-index: 50;
 
     .header-wrapp {
         display: flex;
@@ -380,13 +384,14 @@ body {
     }
 }
 
+// about-us
 .about-us {
     padding: 125px 0;
 
     .about-us-wrapp {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .about-us--text {
@@ -425,7 +430,6 @@ body {
             margin: 0 auto;
         }
 
-        //btn-slider
         .slick-arrow {
             margin-top: -15px;
 
@@ -439,7 +443,6 @@ body {
             }
         }
 
-        //btn-left
         .slick-prev {
             left: -25px;
             z-index: 20;
@@ -453,7 +456,6 @@ body {
             }
         }
 
-        //btn-right
         .slick-next {
             right: 3px;
 
@@ -463,6 +465,104 @@ body {
                 height: 50px;
                 box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
                 background-color: @primary-light-color;
+            }
+        }
+    }
+}
+
+.elements {
+    color: @primary-light-color;
+    padding: 12.5rem 0 13rem;
+    .bg-img(84, 101, 228, .8, '../../build/img/elements-bg.png');
+    
+    .elements-wrapp {
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           
+            li {
+                width: 25%;
+                padding: .5rem;
+                text-align: center;
+                margin-bottom: 6rem;
+                list-style: none;
+
+                h3 {
+                    color: @primary-light-color;
+                    font-family: "Open Sans Bold";
+                    font-size: 1.125em;
+                    line-height: 27px;
+                    text-transform: uppercase;
+                    margin-bottom: 2.5rem;
+                }
+
+                p {
+                    color: @primary-light-color;
+                    font-family: "Open Sans Regular";
+                    font-size: 1em;
+                    font-weight: 400;
+                    line-height: 27px;
+                }
+
+                &:before {
+                    content: '';
+                    width: 70px;
+                    height: 70px;
+                    display: block;
+                    margin: 0 auto 3.4rem;
+                    border: 2px solid #f8f9fd;
+                    border-radius: 50%;
+                }
+
+                &:nth-child(1) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon1.png');
+                    }
+                }
+
+                &:nth-child(2) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon2.png');
+                    }
+                }
+
+                &:nth-child(3) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon3.png');
+                    }
+                }
+
+                &:nth-child(4) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon4.png');
+                    }
+                }
+
+                &:nth-child(5) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon5.png');
+                        margin-bottom: 6rem;
+                    }
+                }
+
+                &:nth-child(6) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon6.png');
+                    }
+                }
+
+                &:nth-child(7) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon7.png');
+                    }
+                }
+
+                &:nth-child(8) {
+                    &:before {
+                        .bg-img-icon('../../build/img/elements-icon8.png');
+                    }
+                }
             }
         }
     }
