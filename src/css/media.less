@@ -22,6 +22,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .about-us--text {
             text-align: center;
             margin: -4rem 0 3rem;
@@ -30,13 +31,28 @@
 
     .elements {
         padding-bottom: 5rem;
+
         .elements-wrapp {
             ul {
                 display: flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
+
                 li {
                     width: 25%;
+                }
+            }
+        }
+    }
+
+    .price {
+        .price-wrapp {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            ul {
+                width: 40%;
+                &:nth-of-type(-n+2) {
+                    margin-bottom: 15px;
                 }
             }
         }
@@ -44,12 +60,13 @@
 }
 
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     .elements {
         .elements-wrapp {
             ul {
                 display: flex;
                 justify-content: space-between;
+
                 li {
                     width: 20%;
                 }
@@ -184,9 +201,27 @@
                     display: flex;
                     justify-content: space-around;
                     flex-wrap: wrap;
+
                     li {
                         width: 40%;
                     }
+                }
+            }
+        }
+
+        .price {
+            .price-wrapp {
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                ul {
+                    width: 70%;
+                    margin-bottom: 15px;
+                    margin: 1rem 0;
+                }
+
+                ul:last-child {
+                    margin-bottom: 0;
                 }
             }
         }
@@ -197,6 +232,7 @@
             .slick-prev {
                 left: 4px;
             }
+
             .slick-next {
                 right: 32px;
             }
@@ -251,6 +287,8 @@
             }
         }
     }
+
+
 }
 
 
@@ -263,14 +301,26 @@
 }
 
 
-@media screen and (max-width: 480px){
-    .elements {
-        .elements-wrapp {
-            ul {
-                display: flex;
-                justify-content: center;
-                li {
-                    width: 80% !important;
+@media screen and (max-width: 480px) {
+    body {
+        .elements {
+            .elements-wrapp {
+                ul {
+                    display: flex;
+                    justify-content: center;
+
+                    li {
+                        width: 80% !important;
+                    }
+                }
+            }
+        }
+
+        .price {
+            .price-wrapp {
+                ul {
+                    width: 95%;
+                    margin: 2rem 0px;
                 }
             }
         }

@@ -31,6 +31,16 @@
   .elements .elements-wrapp ul li {
     width: 25%;
   }
+  .price .price-wrapp {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .price .price-wrapp ul {
+    width: 40%;
+  }
+  .price .price-wrapp ul:nth-of-type(-n+2) {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .elements .elements-wrapp ul {
@@ -120,6 +130,18 @@
   body .elements .elements-wrapp ul li {
     width: 40%;
   }
+  body .price .price-wrapp {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  body .price .price-wrapp ul {
+    width: 70%;
+    margin-bottom: 15px;
+    margin: 1rem 0;
+  }
+  body .price .price-wrapp ul:last-child {
+    margin-bottom: 0;
+  }
   .about-us .carousel-about-us .slick-prev {
     left: 4px;
   }
@@ -165,11 +187,15 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .elements .elements-wrapp ul {
+  body .elements .elements-wrapp ul {
     display: flex;
     justify-content: center;
   }
-  .elements .elements-wrapp ul li {
+  body .elements .elements-wrapp ul li {
     width: 80% !important;
+  }
+  body .price .price-wrapp ul {
+    width: 95%;
+    margin: 2rem 0px;
   }
 }

@@ -487,3 +487,89 @@ body {
 .elements .elements-wrapp ul li:nth-child(8):before {
   background: url('../../build/img/elements-icon8.png') center center no-repeat;
 }
+.price {
+  padding: 10rem 0 5.5rem;
+}
+.price .price-wrapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price .price-wrapp ul {
+  text-align: center;
+  width: 370px;
+  padding-bottom: 15rem;
+  position: relative;
+  box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.price .price-wrapp ul li {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  margin-bottom: 51px;
+  list-style: none;
+  color: #555;
+  font-family: "Open Sans Regular";
+}
+.price .price-wrapp ul li:last-child {
+  margin-bottom: 0;
+}
+.price .price-wrapp ul li:nth-child(n+2) {
+  position: relative;
+}
+.price .price-wrapp ul li:nth-child(n+2):before {
+  content: '';
+  width: 99px;
+  height: 1px;
+  display: block;
+  background: #d7d7d7;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -42px;
+}
+.price .price-wrapp ul li:last-child:before {
+  display: none;
+}
+.price .price-wrapp ul .price-box {
+  padding: 50px 0;
+  border-radius: 6px 6px 0 0;
+}
+.price .price-wrapp ul .price-box span {
+  font-weight: 600;
+}
+.price .price-wrapp ul .price-box span:nth-of-type(1) {
+  font-size: 2em;
+  position: relative;
+  top: -14px;
+  left: -20px;
+  font-family: "Open Sans Bold";
+}
+.price .price-wrapp ul .price-box span:nth-of-type(2) {
+  font-size: 4.1875em;
+  font-family: "Open Sans Bold";
+}
+.price .price-wrapp ul .price-box span:nth-of-type(3) {
+  font-size: 1.125em;
+  font-family: "Open Sans Bold";
+}
+.price .price-wrapp ul a {
+  text-decoration: none;
+  text-transform: none;
+  padding: 1.7rem 4.8rem 1.6rem;
+  display: inline-block;
+  border-radius: 23px;
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  margin-left: -7.8rem;
+}
+.price .price-wrapp ul a,
+.price .price-wrapp ul .price-box {
+  color: #fff;
+  background: #5b6ceb;
+}
+.price .price-wrapp ul a:hover,
+.price .price-wrapp ul a:hover ~ .price-box {
+  background: #1b32de;
+}
