@@ -610,7 +610,7 @@ body {
   display: none;
 }
 .blocquote .blocquote-carousel .fade > .slick-dots .slick-active {
-  border: 2px solid #5b6cea;
+  border: 2px solid #5b6ceb;
 }
 .blocquote .blocquote-carousel .fade > .slick-dots .slick-active button {
   width: 10px;
@@ -626,7 +626,7 @@ body {
 }
 .blocquote .blocquote-carousel .fade-2 {
   margin: 0;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 6px 3px 10px 7px rgba(219, 219, 219, 0.6);
 }
 .blocquote .blocquote-carousel .fade-2 .block-quote {
@@ -795,4 +795,144 @@ body {
 }
 .blocquote .blocquote-carousel .fade-2 .slick-dots .slick-active {
   display: none;
+}
+footer .contact {
+  color: #ffffff;
+  padding: 10rem 0;
+  background: #5b6ceb;
+}
+footer .contact .block-contact {
+  display: flex;
+  justify-content: space-between;
+}
+footer .contact .block-contact h3 {
+  color: #ffffff;
+  font-family: "Open Sans Bold";
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+footer .contact .block-contact .about {
+  width: 460px;
+}
+footer .contact .block-contact .about .social {
+  display: flex;
+  flex-direction: row;
+}
+footer .contact .block-contact .about .social li {
+  margin-right: 19px;
+  list-style: none;
+  margin: 0 1rem;
+}
+footer .contact .block-contact .about .social li a {
+  display: block;
+  height: 21px;
+}
+footer .contact .block-contact .about p {
+  color: #ffffff;
+  font-family: "Open Sans Regular";
+  font-size: .875em;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 7.1rem;
+}
+footer .contact .block-contact .contact-us {
+  width: 460px;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp {
+  display: flex;
+  flex-direction: row;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .address-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .address-info address {
+  margin-left: 1rem;
+  font-style: normal;
+  color: #ffffff;
+  font-family: 'Open Sans Regular';
+  font-size: 0.875em;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .address-info:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url('../../build/img/marker-icon.png') no-repeat;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .phone-info {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .phone-info ul li {
+  margin-left: 1rem;
+  color: #ffffff;
+  font-family: 'Open Sans Regular';
+  font-size: 0.875em;
+  list-style: none;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .phone-info:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url('../../build/img/phone-icon.png') no-repeat;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .post-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .post-info a {
+  margin-left: 1rem;
+  color: #ffffff;
+  font-family: 'Open Sans Regular';
+  font-size: 0.875em;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .post-info:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url('../../build/img/post-icon.png') center center no-repeat;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .web-site-info {
+  margin-top: 7.5rem;
+  display: flex;
+  align-items: center;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .web-site-info a {
+  margin-left: 1rem;
+  color: #ffffff;
+  font-family: 'Open Sans Regular';
+  font-size: 0.875em;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .web-site-info:before {
+  content: '';
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url('../../build/img/site-icon.png') no-repeat;
+}
+footer .contact .block-contact .contact-us .contact-us-wrapp .contact-us--ml {
+  margin-left: 11.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .copyright {
+  text-align: center;
+  padding: 4.4rem 0;
+  background: #5363d8;
+}
+footer .copyright small {
+  color: #b7bffc;
+  font-family: "Open Sans Regular";
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 22px;
 }
