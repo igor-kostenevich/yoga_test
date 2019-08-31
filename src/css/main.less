@@ -474,13 +474,13 @@ body {
     color: @primary-light-color;
     padding: 12.5rem 0 13rem;
     .bg-img(84, 101, 228, .8, '../../build/img/elements-bg.png');
-    
+
     .elements-wrapp {
         ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-           
+
             li {
                 width: 25%;
                 padding: .5rem;
@@ -572,17 +572,20 @@ body {
 
 .price {
     padding: 10rem 0 5.5rem;
-    .price-wrapp{
+    background: url(../../build/img/decor.png) right bottom no-repeat;
+    .price-wrapp {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         ul {
             text-align: center;
             width: 370px;
-            padding-bottom:15rem;
+            padding-bottom: 15rem;
             position: relative;
             box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            background-color: @primary-light-color;
             li {
                 font-size: 1.125em;
                 text-transform: uppercase;
@@ -590,11 +593,14 @@ body {
                 list-style: none;
                 color: #555;
                 font-family: "Open Sans Regular";
+
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 &:nth-child(n+2) {
                     position: relative;
+
                     &:before {
                         content: '';
                         width: 99px;
@@ -607,17 +613,21 @@ body {
                         margin-left: -42px;
                     }
                 }
+
                 &:last-child {
-                    &:before{
+                    &:before {
                         display: none;
                     }
                 }
             }
+
             .price-box {
                 padding: 50px 0;
                 border-radius: 6px 6px 0 0;
+
                 span {
                     font-weight: 600;
+
                     &:nth-of-type(1) {
                         font-size: 2em;
                         position: relative;
@@ -625,17 +635,20 @@ body {
                         left: -20px;
                         font-family: "Open Sans Bold"
                     }
+
                     &:nth-of-type(2) {
                         font-size: 4.1875em;
                         font-family: "Open Sans Bold"
                     }
+
                     &:nth-of-type(3) {
                         font-size: 1.125em;
                         font-family: "Open Sans Bold"
                     }
                 }
             }
-            a{
+
+            a {
                 text-decoration: none;
                 text-transform: none;
                 padding: 1.7rem 4.8rem 1.6rem;
@@ -646,16 +659,285 @@ body {
                 left: 50%;
                 margin-left: -7.8rem;
             }
-            a,.price-box{
+
+            a,
+            .price-box {
                 color: #fff;
-                background: #5b6ceb;
+                background: @primary-color;
             }
+
             a:hover,
-            a:hover ~ .price-box {
-                background: darken(#5b6ceb, 15%);
+            a:hover~.price-box {
+                background: darken(@primary-color, 15%);
             }
         }
     }
-    
-    
+}
+
+
+
+.blocquote {
+    padding: 2rem 0 20rem;
+
+    .blocquote-carousel {
+        max-width: 1298px;
+        width: 100%;
+        margin: auto;
+
+        .fade {
+
+            //slider-dots
+            &>.slick-dots {
+                width: inherit;
+                top: 75px;
+                left: inherit;
+                right: 0;
+
+                li {
+                    border: 2px solid @decor-color;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    margin-bottom: 1.8rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                button {
+                    width: 0;
+                    height: 0;
+                    border-radius: inherit;
+                }
+
+                button:before {
+                    display: none;
+                }
+
+                .slick-active {
+                    border: 2px solid #5b6cea;
+
+                    button {
+                        width: 10px;
+                        height: 10px;
+                        background: #5b6ceb;
+                    }
+                }
+            }
+
+            &>.slick-arrow {
+                display: none !important;
+            }
+
+            .slick-list {
+                padding-top: 3rem;
+                padding-bottom: 3.6rem;
+            }
+        }
+
+        .fade-2 {
+            margin: 0;
+            background: #fff;
+            box-shadow: 6px 3px 10px 7px rgba(219, 219, 219, 0.6);
+
+            .block-quote {
+                display: flex;
+                flex-direction: row;
+                padding: 2rem 0 3.4rem 7.5rem;
+            }
+
+            .portrait {
+                width: 125px;
+                height: 125px;
+                margin-right: 5rem;
+                border-radius: 50%;
+                box-shadow: 0 0 0 10px @primary-light-color, 0 0 0 12px @decor-color;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .blocquote-text {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 2px;
+                    height: 75px;
+                    display: block;
+                    background: @decor-color;
+                    position: absolute;
+                    top: 50px;
+                    left: 7px;
+                }
+            }
+
+            blockquote {
+                width: 650px;
+                margin: 0;
+                margin-bottom: 1.2rem;
+                padding: 0 7.7rem 1rem 5rem;
+                position: relative;
+                color: @primary-color-text;
+                font-family: "Open Sans Italic";
+                font-size: .875em;
+                font-style: italic;
+                line-height: 22px;
+
+                &:before,
+                &:after {
+                    content: '';
+                    width: 21px;
+                    height: 15px;
+                    display: block;
+                    position: absolute;
+                }
+
+                &:before {
+                    top: 0;
+                    left: 0;
+                    background: url(../../build/img/quote1.png);
+                }
+
+                &:after {
+                    right: 35px;
+                    bottom: -35px;
+                    background: url(../../build/img/quote2.png);
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .positon {
+                padding-left: 5rem;
+
+                span {
+                    color: @title-color;
+                    font-family: "Open Sans Regular";
+                    font-size: .875em;
+                    font-weight: 400;
+                }
+
+                a {
+                    color: @primary-color;
+                    font-family: "Open Sans Bold";
+                    font-size: 1em;
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+            }
+            
+            .slick-arrow {
+                width: 39px;
+                height: 39px;
+                border-radius: 50%;
+                box-shadow: 7px 7px 14px 5px rgba(219, 219, 219, .6);
+                top: inherit;
+                bottom: -38px;
+                z-index: 100;
+
+                &:before {
+                    display: none;
+                }
+            }
+
+            .slick-prev {
+                left: 298px;
+                background: url(../../build/img/prev-icon.png) center center no-repeat;
+                background-color: @primary-light-color;
+                z-index: 20;
+            }
+
+            .slick-next {
+                right: inherit;
+                left: 548px;
+                background: url(../../build/img/next-icon.png) center center no-repeat;
+                background-color: @primary-light-color;
+            }
+
+            .slick-dots {
+                width: inherit;
+                left: 356px;
+                bottom: -37px;
+
+                button {
+                    display: none;
+                }
+
+                li {
+                    width: 62px;
+                    height: 62px;
+                    box-shadow: 0 0 0 3px @primary-light-color, 0 0 0 5px @decor-color;
+                    border-radius: 50%;
+                    position: relative;
+
+                    &:before {
+                        display: inline;
+                        font-weight: 600;
+                        position: absolute;
+                    }
+
+                    &:after {
+                        font-size: 12px;
+                        display: inline;
+                        position: absolute;
+                        right: -59px;
+                    }
+                }
+
+                li:nth-child(1) {
+                    background: url('../../build/img/image-photo-main.png');
+                    background-size: contain;
+
+                    &:before {
+                        content: 'Laura Shepard';
+                        top: 4px;
+                        right: -117px;
+                        font-family: "Open Sans Bold";
+                        font-size: 0.875em;
+                    }
+
+                    &:after {
+                        content: "Trainer";
+                        top: 34px;
+                        color: @title-color;
+                        font-family: "Open Sans Regular";
+                        font-size: .75em;
+                        font-weight: 400;
+                    }
+                }
+
+                li:nth-child(2) {
+                    background: url('../../build/img/image-photo.png');
+
+                    &:before {
+                        content: 'Sara Taylor';
+                        top: 4px;
+                        right: -95px;
+                        font-family: "Open Sans Bold";
+                        font-size: 0.875em;
+                    }
+
+                    &:after {
+                        content: "Trainer";
+                        top: 34px;
+                        color: @title-color;
+                        font-family: "Open Sans Regular";
+                        font-size: .75em;
+                        font-weight: 400;
+                    }
+                }
+
+                .slick-active {
+                    display: none;
+                }
+            }
+        }
+    }
 }

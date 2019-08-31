@@ -57,6 +57,48 @@
             }
         }
     }
+
+    .blocquote{
+        .blocquote-carousel {
+            .fade {
+                & > .slick-dots {
+                    right: 10px;
+                }
+            }
+            .fade-2 {
+                .block-quote {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5rem 7.5rem 7.5rem;
+                }
+                .portrait {
+                    margin-right: 0;
+                    margin-bottom: 2.5rem;
+                }
+                blockquote {
+                    margin-right: 0;
+                }
+                .positon {
+                    padding: 0;
+                    text-align: center;
+                }
+                .slick-prev {
+                    left: 35%;
+                    margin-left: -5px;
+                }
+                .slick-next {
+                    left: inherit;
+                    right: 35%;
+                    margin-right: -5px;
+                }
+                .slick-dots {
+                    left: 50%;
+                    margin-left: -95px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -132,6 +174,52 @@
                 h1,
                 p {
                     text-align: center;
+                }
+            }
+        }
+    }
+
+    .blocquote{
+        .blocquote-carousel {
+            .fade {
+                .blocquote-carousel-block {
+                    .fade-2 {
+                        .slick-prev {
+                            left: 30%;
+                            margin-left: -5px;
+                        }
+                        .slick-next {
+                            left: inherit;
+                            right: 35%;
+                            margin-right: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    .blocquote {
+        .blocquote-carousel {
+            .fade {
+                .blocquote-carousel-block {
+                    .fade-2 {
+                        .block-quote {
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5rem 0 7.5rem;
+                            .portrait {
+                                margin-bottom: 2rem;
+                            }
+                        }
+                        blockquote {
+                            width: 60%;
+                            margin: 0 auto 2rem;
+                        }
+                    }
                 }
             }
         }
@@ -216,7 +304,7 @@
 
                 ul {
                     width: 70%;
-                    margin-bottom: 15px;
+                    margin-bottom: 1.5rem;
                     margin: 1rem 0;
                 }
 
@@ -235,6 +323,32 @@
 
             .slick-next {
                 right: 32px;
+            }
+        }
+    }
+
+    .blocquote{
+        padding: 2rem 0 4rem;
+        .blocquote-carousel {
+            .fade {
+                .blocquote-carousel-block {
+                    .fade-2 {
+                        .block-quote {
+                            blockquote {
+                                padding: 0 3rem 5rem;
+                            }
+                        }
+                        .slick-prev {
+                            left: 5%;
+                            margin-left: -5px;
+                        }
+                        .slick-next {
+                            left: inherit;
+                            right: 10%;
+                            margin-right: -5px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -489,6 +489,7 @@ body {
 }
 .price {
   padding: 10rem 0 5.5rem;
+  background: url(../../build/img/decor.png) right bottom no-repeat;
 }
 .price .price-wrapp {
   display: flex;
@@ -502,6 +503,7 @@ body {
   position: relative;
   box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  background-color: #ffffff;
 }
 .price .price-wrapp ul li {
   font-size: 1.125em;
@@ -572,4 +574,225 @@ body {
 .price .price-wrapp ul a:hover,
 .price .price-wrapp ul a:hover ~ .price-box {
   background: #1b32de;
+}
+.blocquote {
+  padding: 2rem 0 20rem;
+}
+.blocquote .blocquote-carousel {
+  max-width: 1298px;
+  width: 100%;
+  margin: auto;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots {
+  width: inherit;
+  top: 75px;
+  left: inherit;
+  right: 0;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots li {
+  border: 2px solid #d7d7d7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 1.8rem;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots li:last-child {
+  margin-bottom: 0;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots button {
+  width: 0;
+  height: 0;
+  border-radius: inherit;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots button:before {
+  display: none;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots .slick-active {
+  border: 2px solid #5b6cea;
+}
+.blocquote .blocquote-carousel .fade > .slick-dots .slick-active button {
+  width: 10px;
+  height: 10px;
+  background: #5b6ceb;
+}
+.blocquote .blocquote-carousel .fade > .slick-arrow {
+  display: none !important;
+}
+.blocquote .blocquote-carousel .fade .slick-list {
+  padding-top: 3rem;
+  padding-bottom: 3.6rem;
+}
+.blocquote .blocquote-carousel .fade-2 {
+  margin: 0;
+  background: #fff;
+  box-shadow: 6px 3px 10px 7px rgba(219, 219, 219, 0.6);
+}
+.blocquote .blocquote-carousel .fade-2 .block-quote {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0 3.4rem 7.5rem;
+}
+.blocquote .blocquote-carousel .fade-2 .portrait {
+  width: 125px;
+  height: 125px;
+  margin-right: 5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #ffffff, 0 0 0 12px #d7d7d7;
+}
+.blocquote .blocquote-carousel .fade-2 .portrait img {
+  border-radius: 50%;
+}
+.blocquote .blocquote-carousel .fade-2 .blocquote-text {
+  position: relative;
+}
+.blocquote .blocquote-carousel .fade-2 .blocquote-text:before {
+  content: '';
+  width: 2px;
+  height: 75px;
+  display: block;
+  background: #d7d7d7;
+  position: absolute;
+  top: 50px;
+  left: 7px;
+}
+.blocquote .blocquote-carousel .fade-2 blockquote {
+  width: 650px;
+  margin: 0;
+  margin-bottom: 1.2rem;
+  padding: 0 7.7rem 1rem 5rem;
+  position: relative;
+  color: #555555;
+  font-family: "Open Sans Italic";
+  font-size: .875em;
+  font-style: italic;
+  line-height: 22px;
+}
+.blocquote .blocquote-carousel .fade-2 blockquote:before,
+.blocquote .blocquote-carousel .fade-2 blockquote:after {
+  content: '';
+  width: 21px;
+  height: 15px;
+  display: block;
+  position: absolute;
+}
+.blocquote .blocquote-carousel .fade-2 blockquote:before {
+  top: 0;
+  left: 0;
+  background: url(../../build/img/quote1.png);
+}
+.blocquote .blocquote-carousel .fade-2 blockquote:after {
+  right: 35px;
+  bottom: -35px;
+  background: url(../../build/img/quote2.png);
+}
+.blocquote .blocquote-carousel .fade-2 blockquote p {
+  margin-bottom: 0;
+}
+.blocquote .blocquote-carousel .fade-2 .positon {
+  padding-left: 5rem;
+}
+.blocquote .blocquote-carousel .fade-2 .positon span {
+  color: #777777;
+  font-family: "Open Sans Regular";
+  font-size: .875em;
+  font-weight: 400;
+}
+.blocquote .blocquote-carousel .fade-2 .positon a {
+  color: #5b6ceb;
+  font-family: "Open Sans Bold";
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 22px;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-arrow {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  box-shadow: 7px 7px 14px 5px rgba(219, 219, 219, 0.6);
+  top: inherit;
+  bottom: -38px;
+  z-index: 100;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-arrow:before {
+  display: none;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-prev {
+  left: 298px;
+  background: url(../../build/img/prev-icon.png) center center no-repeat;
+  background-color: #ffffff;
+  z-index: 20;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-next {
+  right: inherit;
+  left: 548px;
+  background: url(../../build/img/next-icon.png) center center no-repeat;
+  background-color: #ffffff;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots {
+  width: inherit;
+  left: 356px;
+  bottom: -37px;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots button {
+  display: none;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li {
+  width: 62px;
+  height: 62px;
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #d7d7d7;
+  border-radius: 50%;
+  position: relative;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:before {
+  display: inline;
+  font-weight: 600;
+  position: absolute;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:after {
+  font-size: 12px;
+  display: inline;
+  position: absolute;
+  right: -59px;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:nth-child(1) {
+  background: url('../../build/img/image-photo-main.png');
+  background-size: contain;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:nth-child(1):before {
+  content: 'Laura Shepard';
+  top: 4px;
+  right: -117px;
+  font-family: "Open Sans Bold";
+  font-size: 0.875em;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:nth-child(1):after {
+  content: "Trainer";
+  top: 34px;
+  color: #777777;
+  font-family: "Open Sans Regular";
+  font-size: .75em;
+  font-weight: 400;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:nth-child(2) {
+  background: url('../../build/img/image-photo.png');
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:nth-child(2):before {
+  content: 'Sara Taylor';
+  top: 4px;
+  right: -95px;
+  font-family: "Open Sans Bold";
+  font-size: 0.875em;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots li:nth-child(2):after {
+  content: "Trainer";
+  top: 34px;
+  color: #777777;
+  font-family: "Open Sans Regular";
+  font-size: .75em;
+  font-weight: 400;
+}
+.blocquote .blocquote-carousel .fade-2 .slick-dots .slick-active {
+  display: none;
 }

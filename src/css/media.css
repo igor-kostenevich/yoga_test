@@ -41,6 +41,39 @@
   .price .price-wrapp ul:nth-of-type(-n+2) {
     margin-bottom: 15px;
   }
+  .blocquote .blocquote-carousel .fade > .slick-dots {
+    right: 10px;
+  }
+  .blocquote .blocquote-carousel .fade-2 .block-quote {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 7.5rem 7.5rem;
+  }
+  .blocquote .blocquote-carousel .fade-2 .portrait {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+  .blocquote .blocquote-carousel .fade-2 blockquote {
+    margin-right: 0;
+  }
+  .blocquote .blocquote-carousel .fade-2 .positon {
+    padding: 0;
+    text-align: center;
+  }
+  .blocquote .blocquote-carousel .fade-2 .slick-prev {
+    left: 35%;
+    margin-left: -5px;
+  }
+  .blocquote .blocquote-carousel .fade-2 .slick-next {
+    left: inherit;
+    right: 35%;
+    margin-right: -5px;
+  }
+  .blocquote .blocquote-carousel .fade-2 .slick-dots {
+    left: 50%;
+    margin-left: -95px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .elements .elements-wrapp ul {
@@ -83,6 +116,30 @@
   .slider .slider-wrapp .slider-text h1,
   .slider .slider-wrapp .slider-text p {
     text-align: center;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .slick-prev {
+    left: 30%;
+    margin-left: -5px;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .slick-next {
+    left: inherit;
+    right: 35%;
+    margin-right: -5px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .block-quote {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 7.5rem;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .block-quote .portrait {
+    margin-bottom: 2rem;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 blockquote {
+    width: 60%;
+    margin: 0 auto 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -136,7 +193,7 @@
   }
   body .price .price-wrapp ul {
     width: 70%;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     margin: 1rem 0;
   }
   body .price .price-wrapp ul:last-child {
@@ -147,6 +204,21 @@
   }
   .about-us .carousel-about-us .slick-next {
     right: 32px;
+  }
+  .blocquote {
+    padding: 2rem 0 4rem;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .block-quote blockquote {
+    padding: 0 3rem 5rem;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .slick-prev {
+    left: 5%;
+    margin-left: -5px;
+  }
+  .blocquote .blocquote-carousel .fade .blocquote-carousel-block .fade-2 .slick-next {
+    left: inherit;
+    right: 10%;
+    margin-right: -5px;
   }
 }
 @media screen and (max-width: 650px) {
